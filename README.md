@@ -1,33 +1,91 @@
-# Smart Route Planner
+# 🚗 Smart Route Planner
 
-A modular Graph Algorithm Engine developed in Modern C++.
+A modular **Graph Algorithm Engine** developed in **Modern C++17** that simulates a smart route planning system using real-world graph algorithms.
 
-## Features
+Instead of being a simple implementation of individual algorithms, this project provides a reusable graph framework capable of solving shortest path, connectivity, minimum spanning tree, and network analysis problems through a menu-driven command-line interface.
 
-- Graph Creation
-- BFS
-- DFS
+---
+
+# ✨ Project Highlights
+
+- Developed using **Modern C++ (C++17)** and STL
+- Modular Object-Oriented Design
+- Menu-driven Command Line Interface
+- Weighted & Unweighted Graph Support
+- Directed & Undirected Graph Support
+- File-based Graph Loading
+- Reusable Graph Engine Architecture
+- Efficient implementation using Adjacency List
+- Optimized graph traversal using STL containers
+
+---
+
+# 📌 Algorithms Implemented
+
+### Graph Traversal
+- Breadth First Search (BFS)
+- Depth First Search (DFS)
+
+### Connectivity
 - Connected Components
 - Cycle Detection
-- Topological Sort
-- Dijkstra
-- Bellman Ford
-- Floyd Warshall
-- Prim MST
-- Kruskal MST
-- Bridges
-- Articulation Points
-- Strongly Connected Components
+- Strongly Connected Components (Kosaraju)
+
+### Shortest Path Algorithms
+- Dijkstra Algorithm
+- Bellman-Ford Algorithm
+- Floyd-Warshall Algorithm
 - A* Search
-- File Based Graph Loading
 
-## Technologies
+### Minimum Spanning Tree
+- Prim's Algorithm
+- Kruskal's Algorithm
+- Disjoint Set Union (Union-Find)
 
-- C++17
-- STL
-- OOP
-- Graph Algorithms
+### Graph Analysis
+- Topological Sort
+- Bridges Detection
+- Articulation Points
+
+---
+
+# 🛠 Technologies Used
+
+- Modern C++17
+- Standard Template Library (STL)
+- Object-Oriented Programming (OOP)
+- Graph Theory
 - Priority Queue
-- DFS
-- BFS
+- Queue
+- Stack
 - Hash Maps
+- File Handling
+
+---
+
+# 📂 Project Structure
+
+```text
+SmartRoutePlanner/
+
+├── include/
+│   ├── Graph.h
+│   ├── BFS.h
+│   ├── DFS.h
+│   ├── Dijkstra.h
+│   ├── BellmanFord.h
+│   ├── ...
+│
+├── src/
+│   ├── Graph.cpp
+│   ├── BFS.cpp
+│   ├── DFS.cpp
+│   ├── Dijkstra.cpp
+│   ├── ...
+│
+├── input/
+│   └── graph.txt
+│
+├── output/
+│
+└── README.md
