@@ -1,91 +1,130 @@
 # 🚗 Smart Route Planner
 
-A modular **Graph Algorithm Engine** developed in **Modern C++17** that simulates a smart route planning system using real-world graph algorithms.
-
-Instead of being a simple implementation of individual algorithms, this project provides a reusable graph framework capable of solving shortest path, connectivity, minimum spanning tree, and network analysis problems through a menu-driven command-line interface.
+*A graph-based route optimization system built in Modern C++ that finds the shortest path between locations using Dijkstra's Algorithm.*
 
 ---
 
-# ✨ Project Highlights
+## 📌 Overview
 
-- Developed using **Modern C++ (C++17)** and STL
-- Modular Object-Oriented Design
-- Menu-driven Command Line Interface
-- Weighted & Unweighted Graph Support
-- Directed & Undirected Graph Support
-- File-based Graph Loading
-- Reusable Graph Engine Architecture
-- Efficient implementation using Adjacency List
-- Optimized graph traversal using STL containers
+Smart Route Planner is a C++ application that models cities and roads as a weighted graph to compute the shortest route between any two locations. The project follows a modular architecture with separate components for graph management, shortest path computation, and user interaction, making it scalable and easy to maintain.
 
 ---
 
-# 📌 Algorithms Implemented
+## ✨ Features
 
-### Graph Traversal
-- Breadth First Search (BFS)
-- Depth First Search (DFS)
-
-### Connectivity
-- Connected Components
-- Cycle Detection
-- Strongly Connected Components (Kosaraju)
-
-### Shortest Path Algorithms
-- Dijkstra Algorithm
-- Bellman-Ford Algorithm
-- Floyd-Warshall Algorithm
-- A* Search
-
-### Minimum Spanning Tree
-- Prim's Algorithm
-- Kruskal's Algorithm
-- Disjoint Set Union (Union-Find)
-
-### Graph Analysis
-- Topological Sort
-- Bridges Detection
-- Articulation Points
+- 📍 Create and manage a weighted road network
+- ➕ Add roads dynamically
+- 🗺️ Display the complete graph
+- 🚀 Find the shortest route between two locations
+- 📏 Calculate total travel distance
+- ⚡ Efficient implementation using Min Heap (`priority_queue`)
+- 🧩 Modular OOP-based design
 
 ---
 
-# 🛠 Technologies Used
-
-- Modern C++17
-- Standard Template Library (STL)
-- Object-Oriented Programming (OOP)
-- Graph Theory
-- Priority Queue
-- Queue
-- Stack
-- Hash Maps
-- File Handling
-
----
-
-# 📂 Project Structure
+## 🏗️ Project Structure
 
 ```text
-SmartRoutePlanner/
-
-├── include/
-│   ├── Graph.h
-│   ├── BFS.h
-│   ├── DFS.h
-│   ├── Dijkstra.h
-│   ├── BellmanFord.h
-│   ├── ...
+Smart-Route-Planner/
 │
 ├── src/
+│   ├── main.cpp
 │   ├── Graph.cpp
-│   ├── BFS.cpp
-│   ├── DFS.cpp
-│   ├── Dijkstra.cpp
-│   ├── ...
+│   └── Graph.h
 │
-├── input/
-│   └── graph.txt
-│
-├── output/
-│
-└── README.md
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🧠 Algorithm
+
+The project uses **Dijkstra's Algorithm** to compute the minimum distance between two locations.
+
+**Data Structures Used**
+- Weighted Graph
+- Adjacency List
+- Priority Queue (Min Heap)
+- `unordered_map`
+- `vector`
+
+---
+
+## ⚙️ Time Complexity
+
+| Operation | Complexity |
+|----------|------------|
+| Add Road | O(1) |
+| Display Graph | O(V + E) |
+| Shortest Path (Dijkstra) | O((V + E) log V) |
+
+> **V** = Number of Locations  
+> **E** = Number of Roads
+
+---
+
+## 🛠️ Tech Stack
+
+- C++17
+- STL
+- Graph Algorithms
+- Object-Oriented Programming
+
+---
+
+## 🚀 Getting Started
+
+### Compile
+
+```bash
+g++ src/main.cpp src/Graph.cpp -o SmartRoutePlanner
+```
+
+### Run
+
+**Linux/macOS**
+```bash
+./SmartRoutePlanner
+```
+
+**Windows**
+```bash
+SmartRoutePlanner.exe
+```
+
+---
+
+## 📈 Future Enhancements
+
+- A* Search Algorithm
+- Traffic-aware routing
+- Road closure support
+- File-based graph loading
+- GUI using Qt
+- Map visualization
+
+---
+
+## 📚 Concepts Demonstrated
+
+- Graphs
+- Dijkstra's Algorithm
+- Greedy Algorithms
+- Priority Queue
+- Hashing
+- OOP
+- STL
+- Time Complexity Analysis
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Why this Project?
+
+Smart Route Planner demonstrates how graph algorithms can solve real-world navigation problems while emphasizing clean architecture, modular C++ design, and efficient algorithm implementation.
